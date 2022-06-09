@@ -373,12 +373,7 @@ dashboard_width = "1250px"
 dashboard_width_inside = "1210px"
 ## Layout
 app.layout = dbc.Container([
-    dbc.Row(
-        [
-            component_RCBP_Dscription
-
-        ],style = {"margin": "auto", "width": dashboard_width}
-    ),
+    
     dbc.Row(
         dbc.Card([
             html.H3("Key Indicators", style = {"margin": "auto", "width": "98%", "marginTop":"15px", "marginBottom":"0px"}),
@@ -403,7 +398,12 @@ app.layout = dbc.Container([
             ),
         ],style = {"margin": "auto", "marginTop":"20px","width": dashboard_width}),
     ),
-    
+    dbc.Row(
+        [
+            component_RCBP_Dscription
+
+        ],style = {"margin": "auto", "width": dashboard_width, "marginBottom":'20px'}
+    ),
     
 
 ], style = {"max-width": "2000px"})
